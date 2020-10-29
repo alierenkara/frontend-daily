@@ -1,0 +1,224 @@
+@import "reset";
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+
+body {
+  background-color: #303236;
+  font-family: Muli;
+}
+
+.search {
+  width: 377px;
+  background-color: #3d3f43;
+  border-radius: 15px;
+  margin: 25px;
+  padding: 40px 45px;
+  color: #fff;
+
+  form {
+    position: relative;
+    margin-bottom: 30px;
+
+    .search--icon {
+      position: absolute;
+      width: 53px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    input {
+      height: 50px;
+      width: 100%;
+      padding-left: 53px;
+      background-color: #303236;
+      border: none;
+      font-size: 16px;
+      border-radius: 5px;
+      &:focus {
+        outline: 0;
+      }
+      &::placeholder {
+        color: rgba($color: #fff, $alpha: 0.5);
+      }
+    }
+  }
+
+  h6 {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  ul {
+    li {
+      a {
+        text-decoration: none;
+        color: #fff;
+        display: block;
+        margin: 15px 0;
+        &:hover {
+          font-weight: bold;
+        }
+      }
+      &.active a {
+        font-weight: bold;
+        color: #2ccdea;
+      }
+    }
+  }
+}
+
+.search--filter {
+  background-color: #3d3f43;
+  width: 656px;
+  border-radius: 5px;
+  margin: 25px;
+  position: relative;
+  flex-direction: column;
+
+  form {
+    display: flex;
+    align-items: center;
+    padding: 14px;
+
+    .input--box {
+      display: flex;
+      align-items: center;
+      flex: 1;
+      .search--icon {
+        position: absolute;
+        height: 53px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      input {
+        color: #fff;
+        height: 50px;
+        padding-left: 53px;
+        background-color: transparent;
+        border: none;
+        font-size: 16px;
+        width: 100%;
+        &:focus {
+          outline: 0;
+        }
+        &::placeholder {
+          color: rgba($color: #fff, $alpha: 0.5);
+        }
+      }
+    }
+
+    .filters {
+      border-left: 1px solid #303236;
+      ul {
+        display: flex;
+        margin-left: 25px;
+        li {
+          label {
+            .text {
+              font-size: 16px;
+              color: #fff;
+              display: block;
+              height: 40px;
+              line-height: 40px;
+              padding: 0 25px;
+              border-radius: 40px;
+              font-weight: normal;
+              cursor: pointer;
+              transition: 600ms background-color, 300ms color;
+            }
+            input {
+              display: none;
+              &:checked + .text {
+                background-color: #303236;
+                color: #2ccdea;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.option--filter {
+  background-color: #3d3f43;
+  width: 468px;
+  margin: 25px;
+  border-radius: 15px;
+  padding: 40px 45px;
+
+  form {
+    ul {
+      li {
+        display: flex;
+        align-items: center;
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+
+        .key {
+          color: #fff;
+          font-size: 16px;
+          font-weight: bold;
+          width: 100px;
+        }
+        .value {
+          flex: 1;
+
+          input,
+          select,
+          option {
+            height: 50px;
+            width: 100%;
+            padding: 0 20px;
+            background-color: #303236;
+            border: none;
+            font-size: 16px;
+            border-radius: 5px;
+            color: #fff;
+            &:focus {
+              outline: 0;
+            }
+            &::placeholder {
+              color: rgba($color: #fff, $alpha: 0.5);
+            }
+          }
+
+          select,
+          option {
+            cursor: pointer;
+            appearance: none;
+            background: #303236 url("../imgs/arrow-icon.svg") no-repeat right
+              center;
+          }
+        }
+
+        &.filter--buttons {
+          margin-top: 40px;
+          padding-top: 25px;
+          border-top: 1px solid #303236;
+          display: flex;
+          justify-content: space-between;
+          a {
+            text-decoration: none;
+            color: rgba($color: #fff, $alpha: 0.5);
+          }
+
+          button {
+            background: linear-gradient(to right, #31a5d9, #1e96a0);
+            border: none;
+            color: white;
+            font-size: 16px;
+            padding: 15px 30px;
+            border-radius: 30px;
+          }
+        }
+      }
+    }
+  }
+}
