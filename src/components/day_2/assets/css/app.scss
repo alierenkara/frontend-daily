@@ -1,0 +1,119 @@
+@import "reset";
+@import "_icon-font.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+body {
+  background-color: #f5f6f8;
+}
+
+.header {
+  header {
+    background-color: #fff;
+    .container {
+      height: 56px;
+      margin: 0px 100px;
+      display: flex;
+      align-items: center;
+
+      .logo {
+        margin-right: 18px;
+      }
+      .search--input {
+        position: relative;
+        width: 312px;
+
+        i {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 44px;
+          height: 32px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #aaa;
+        }
+        input {
+          width: 100%;
+          height: 32px;
+          padding-left: 44px;
+          background-color: rgba(#dedede, 0.32);
+          font-size: 14px;
+          font-weight: 500;
+          border-radius: 4px;
+          &::placeholder {
+            color: #aaa;
+          }
+        }
+      }
+      .menu {
+        margin: 0 auto;
+        ul {
+          display: flex;
+          li {
+            a {
+              color: #aaaaaa;
+              display: flex;
+              align-items: flex-end;
+              span {
+                display: none;
+                margin-left: 6px;
+                padding-bottom: 2px;
+                font-size: 14px;
+              }
+              i {
+                font-size: 20px;
+                margin-left: 34px;
+              }
+              &:hover {
+                color: #006699;
+                span {
+                  color: #006699;
+                }
+              }
+            }
+            &.active {
+              span {
+                color: #006699;
+                display: block;
+              }
+              i {
+                color: #006699;
+              }
+            }
+          }
+        }
+      }
+      .profile {
+        display: flex;
+        a {
+          display: flex;
+          .profile--name {
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+            .name {
+              font-size: 12px;
+              color: #17272f;
+            }
+            .status {
+              font-size: 10px;
+              color: #31b057;
+            }
+          }
+          img {
+            width: 24px;
+            height: 24px;
+            margin-left: 6px;
+          }
+          i {
+            color: #a7b4cc;
+            font-size: 12px;
+            margin-left: 5px;
+            margin: auto;
+          }
+        }
+      }
+    }
+  }
+}
