@@ -67,6 +67,29 @@ function Day_2() {
           </div>
         </header>
       </div>
+
+      <div className="profile--card">
+        <div className="profile--container">
+          <img className="banner" src="imgs/banner.png"></img>
+          <img className="avatar" src="imgs/avatar-2.png"></img>
+        </div>
+        <div className="name--container">
+          <span className="name">Cameron Williamson</span>
+          <span className="title">Business Analyst</span>
+        </div>
+        <div className="analysis--container">
+          <ul>
+            <li>
+              <span className="text">Who viewed your profile</span>
+              <span className="count">90</span>
+            </li>
+            <li>
+              <span className="text">Views of your post</span>
+              <span className="count">627</span>
+            </li>
+          </ul>
+        </div>
+      </div>
     </>
   );
 }
