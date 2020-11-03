@@ -1,6 +1,6 @@
-@import "reset";
-@import "_icon-font.scss";
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import 'reset';
+@import '_icon-font.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
 body {
   background-color: #f5f6f8;
@@ -181,6 +181,44 @@ body {
           font-weight: 500;
           font-size: 14px;
           color: #006699;
+        }
+      }
+    }
+  }
+}
+
+.create-post {
+  width: 540px;
+  margin: 25px;
+  padding: 0 16px;
+  border-radius: 6px;
+  background-color: #fff;
+  textarea {
+    width: 100%;
+    margin-top: 29px;
+    resize: none;
+    font-size: 14px;
+    color: black;
+    &::placeholder {
+      color: #aaa;
+    }
+  }
+  ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 8px;
+    border-top: 1px solid #edf0f5;
+    li {
+      label {
+        cursor: pointer;
+        color: #17272f;
+        font-size: 14px;
+        input {
+          display: none;
+        }
+        i {
+          font-size: 20px;
+          margin-right: 8px;
         }
       }
     }
