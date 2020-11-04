@@ -124,6 +124,57 @@ function Day_2() {
           </li>
         </ul>
       </div>
+
+      <div className='recommendation--card'>
+        <h3>Add to Your Feeds</h3>
+        <ul>
+          <li>
+            <a href='#'>
+              <div className='logo'>
+                <img src='imgs/techinAsia.png'></img>
+              </div>
+              <div className='text'>
+                <h3>Techin Asia Indonesia</h3>
+                <span>Corporate - Online Media</span>
+              </div>
+            </a>
+            <a href='#' className='add--icon'>
+              <i className='icon-plus'></i>
+            </a>
+          </li>
+          <li>
+            <a href='#'>
+              <div className='logo'>
+                <img src='imgs/figmaIndonesia.png'></img>
+              </div>
+              <div className='text'>
+                <h3>Figma Indonesia</h3>
+                <span>Design Platform</span>
+              </div>
+            </a>
+            <a href='#' className='add--icon'>
+              <i className='icon-plus'></i>
+            </a>
+          </li>
+          <li>
+            <a href='#'>
+              <div className='logo'>
+                <img src='imgs/uplabs.png'></img>
+              </div>
+              <div className='text'>
+                <h3>Uplabs</h3>
+                <span>Design Marketplace</span>
+              </div>
+            </a>
+            <a href='#' className='add--icon'>
+              <i className='icon-plus'></i>
+            </a>
+          </li>
+        </ul>
+        <a href='#' className='more--button'>
+          See All Recommendation
+        </a>
+      </div>
     </>
   )
 }

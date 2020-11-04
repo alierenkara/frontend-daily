@@ -224,3 +224,72 @@ body {
     }
   }
 }
+
+.recommendation--card {
+  background-color: #fff;
+  width: 270px;
+  margin: 25px;
+  padding: 20px 16px 18px 16px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #17272f;
+    margin-bottom: 8px;
+  }
+
+  ul {
+    border-top: 1px solid #dedede;
+    li {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 16px;
+      a {
+        display: flex;
+        .logo {
+          width: 24px;
+          height: 24px;
+          border-radius: 99px;
+          margin-right: 8px;
+        }
+        div {
+          h3 {
+            font-size: 14px;
+            font-weight: 500;
+            color: #17272f;
+            margin-bottom: 3px;
+          }
+          span {
+            font-size: 12px;
+            font-weight: 400;
+            color: #aaaaaa;
+          }
+        }
+      }
+      .add--icon {
+        width: 24px;
+        height: 24px;
+        border: 1px solid #006699;
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        i {
+          color: #006699;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .more--button {
+    font-size: 14px;
+    font-weight: 500;
+    color: #006699;
+    text-align: center;
+    margin-top: 36px;
+  }
+}
