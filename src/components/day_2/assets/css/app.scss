@@ -6,6 +6,13 @@ body {
   background-color: #f5f6f8;
 }
 
+main {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
 .header {
   header {
     background-color: #fff;
@@ -291,5 +298,150 @@ body {
     color: #006699;
     text-align: center;
     margin-top: 36px;
+  }
+}
+
+.post {
+  background-color: #fff;
+  width: 540px;
+  margin: 25px;
+  padding: 13px 16px 21px;
+  border-radius: 6px;
+  .author {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #edf0f5;
+    padding-bottom: 9px;
+    margin-bottom: 21px;
+    .author-details {
+      display: flex;
+      img {
+        width: 36px;
+        height: 36px;
+        margin-right: 12px;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        h3 {
+          font-size: 14px;
+          font-weight: 500;
+          color: #17272f;
+          margin-bottom: 2px;
+        }
+        span {
+          font-size: 10px;
+          font-weight: 400;
+          color: #aaa;
+        }
+        :not(:last-child) {
+          margin-bottom: 4px;
+        }
+      }
+    }
+    .more {
+      color: #aaa;
+      font-size: 18px;
+    }
+  }
+
+  .content {
+    p {
+      color: #17272f;
+      font-size: 14px;
+      font-weight: 400;
+    }
+    img {
+      margin-top: 12px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .status {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #edf0f5;
+    margin-bottom: 14px;
+    padding-bottom: 14px;
+    i {
+      margin-right: 9px;
+      font-size: 16px;
+    }
+    .icon-heart {
+      color: #e52a34;
+    }
+    .icon-thumbs-up {
+      color: #388bf2;
+    }
+    span {
+      font-size: 10px;
+      font-weight: 400;
+      color: #17272f;
+      margin-left: 11px;
+    }
+  }
+
+  .actions {
+    ul {
+      display: flex;
+      margin-bottom: 20px;
+      li {
+        margin-right: 16px;
+        a {
+          font-size: 16px;
+          color: #aaaaaa;
+          i {
+            margin-right: 8px;
+            font-size: 20px;
+          }
+        }
+        :hover {
+          color: #006699;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .comment {
+    margin-top: 20px;
+    display: flex;
+    img {
+      width: 32px;
+      height: 32px;
+      margin-right: 12px;
+    }
+    .textarea-wrapper {
+      border: 1px solid #edf0f5;
+      border-radius: 6px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      textarea {
+        width: 100%;
+        resize: none;
+        font-size: 14px;
+        padding: 8px;
+      }
+      ::placeholder {
+        font-size: 14px;
+        font-weight: 400;
+        color: #dedede;
+      }
+      label {
+        position: absolute;
+        right: 14px;
+        color: #a7b4cc;
+        font-size: 20px;
+        padding-left: 16px;
+        cursor: pointer;
+        border-left: 1px solid #edf0f5;
+        input {
+          display: none;
+        }
+      }
+    }
   }
 }
