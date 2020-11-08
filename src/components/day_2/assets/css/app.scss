@@ -6,13 +6,6 @@ body {
   background-color: #f5f6f8;
 }
 
-main {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: center;
-}
-
 .header {
   header {
     background-color: #fff;
@@ -194,7 +187,7 @@ main {
   }
 }
 
-.create-post {
+.create--post {
   width: 540px;
   margin: 25px;
   padding: 0 16px;

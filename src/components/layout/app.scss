@@ -1,0 +1,54 @@
+body {
+  color: black;
+  background-color: #fff;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 25% auto;
+  box-sizing: border-box;
+  .menu {
+    text-align: center;
+    padding: 5px;
+
+    .menu--header {
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+    }
+    .menu--item {
+      color: black;
+      font-size: 16px;
+      border-bottom: 1px solid #aaa;
+      border-radius: 10px;
+      background-color: rgba(#ccc, 0.2);
+      padding: 10px;
+      cursor: pointer;
+      &:hover {
+        background-color: rgba(#ccc, 0.4);
+      }
+    }
+
+    .sub--menu {
+      display: none;
+      text-align: right;
+      &.isClicked {
+        display: block;
+      }
+    }
+    .sub--menu--name {
+      padding: 10px;
+      margin: 10px;
+      &:hover {
+        background-color: rgba(#ccc, 1);
+        border-radius: 10px;
+      }
+    }
+  }
+  .content {
+    display: grid;
+    place-items: center;
+  }
+}
