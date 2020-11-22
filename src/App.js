@@ -7,6 +7,7 @@ import {
   RecommendationCard,
   Post,
 } from './components/day_2'
+import { Search2, Topics, List } from './components/day_3'
 import Layout from './components/layout'
 
 const menuArray = [
@@ -49,6 +50,23 @@ const menuArray = [
       {
         name: 'Post',
         component: <Post />,
+      },
+    ],
+  },
+  {
+    name: 'Day 3',
+    items: [
+      {
+        name: 'Search',
+        component: <Search2 />,
+      },
+      {
+        name: 'Topics',
+        component: <Topics />,
+      },
+      {
+        name: 'List',
+        component: <List />,
       },
     ],
   },

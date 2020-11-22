@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Mulish', sans-serif;
+  -webkit-overflow-scrolling: touch;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.search__component {
+  width: 855px;
+  background-color: #1b1b30;
+  padding: 40px 50px;
+  margin-top: 25px;
+  h2 {
+    color: #bbbbd7;
+    font-size: 36px;
+    margin-bottom: 25px;
+  }
+  .search__input {
+    position: relative;
+    display: flex;
+    .icon {
+      position: absolute;
+      color: white;
+      width: 74px;
+      height: 72px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    input {
+      color: white;
+      font-size: 18px;
+      height: 72px;
+      width: 100%;
+      background-color: #2a2a42;
+      border: 1px solid #454564;
+      padding-left: 74px;
+      border-radius: 5px;
+    }
+  }
+}
+
+.topics__component {
+  width: 307px;
+  background-color: #1b1b30;
+  border-radius: 10px;
+  padding: 30px;
+  margin-top: 25px;
+
+  h4 {
+    font-weight: 500;
+    color: #bbbbd7;
+    font-size: 18px;
+  }
+  ul {
+    margin-top: 21px;
+    li {
+      a {
+        display: block;
+        padding: 7px;
+        color: #786cd5;
+        font-size: 16px;
+        &:hover {
+          color: #bbbbd7;
+          transition: 0.5s color;
+        }
+      }
+    }
+  }
+
+  hr {
+    border-bottom: 1px solid #141428;
+    margin: 14px 0;
+  }
+
+  .contact {
+    p {
+      color: #bbbbd7;
+      font-size: 16px;
+      margin: 13px 0;
+    }
+    button {
+      display: flex;
+      justify-content: center;
+      background-color: #786cd5;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 500;
+      margin: 40px 0;
+      width: 100%;
+      line-height: 56px;
+      border-radius: 5px;
+      &:hover {
+        background-color: darken(#786cd5, 10);
+        transition: 0.5s background-color;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.list__component {
+  width: 735px;
+  background-color: #1b1b30;
+  color: #bbbbd7;
+  padding: 30px;
+  margin-top: 25px;
+  position: relative;
+  .text {
+    h4 {
+      font-size: 18px;
+      font-weight: 500;
+    }
+    p {
+      margin-top: 20px;
+      font-size: 16px;
+      font-weight: 400;
+      width: 543px;
+    }
+  }
+  .category {
+    font-size: 16px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #ff7e9c;
+    margin: 30px;
+    padding: 8px 12px;
+    background-color: rgba($color: #ff7e9c, $alpha: 0.1);
+    border-radius: 17.5px;
+  }
+}
