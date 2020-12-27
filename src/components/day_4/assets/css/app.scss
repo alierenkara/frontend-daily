@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: content-box;
+  -webkit-overflow-scrolling: touch;
+  font-family: 'Mulish', sans-serif;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.component {
+  &--prices {
+    max-width: 920px;
+    padding: 40px 50px;
+    height: 1080px;
+    background-color: #f2f2f2 !important;
+    .header {
+      display: flex;
+      margin-bottom: 55px;
+      justify-content: space-between;
+      color: #171922;
+
+      h3 {
+        font-size: 42px;
+      }
+
+      label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 212px;
+        height: 50px;
+        border-radius: 25px;
+        background-color: #d4d9e0;
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+
+        &::before {
+          content: '';
+          width: 100px;
+          height: 40px;
+          border-radius: 40px;
+          background-color: #fff;
+          position: absolute;
+          top: 5px;
+          left: 5px;
+          box-shadow: 0 15px 13px -12px rgba(#8693a4, 0.74);
+          transition: 300ms left ease-in-out;
+          z-index: -1;
+        }
+
+        span {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100px;
+          height: 40px;
+          font-size: 16px;
+          font-weight: bold;
+          border-radius: 25px;
+          opacity: 0.7;
+          transition: 400ms opacity ease-in-out;
+
+          &:first-child {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .packages {
+      display: flex;
+      margin: 0 -20px;
+      .package {
+        width: 440px;
+        margin: 0 20px;
+        padding: 45px;
+        background-color: #fff;
+        border-radius: 5px;
+        color: #171922;
+        display: flex;
+        flex-direction: column;
+        transition: 300ms box-shadow ease-in-out;
+
+        &:hover {
+          box-shadow: 0 19px 50px -20px rgba(#8693a4, 0.74);
+          .button {
+            background-color: #171922;
+            color: #fff;
+          }
+        }
+
+        h6 {
+          font-size: 28px;
+          font-weight: bold;
+          margin-bottom: 35px;
+        }
+
+        .price-info {
+          .price {
+            font-size: 22px;
+            font-weight: bold;
+            span::before {
+              content: attr(data-monthly-price);
+            }
+            margin-bottom: 10px;
+          }
+          .description {
+            font-size: 18px;
+            font-weight: bold;
+            opacity: 0.7;
+            span::before {
+              content: attr(data-monthly-text);
+            }
+            margin-bottom: 30px;
+          }
+        }
+
+        p {
+          font-size: 16px;
+          font-weight: 600;
+          opacity: 0.7;
+          line-height: 25px;
+          margin-bottom: 35px;
+        }
+
+        .button {
+          height: 60px;
+          font-size: 16px;
+          font-weight: 600;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: auto;
+          color: #171922;
+          border: 1px solid #171922;
+          border-radius: 5px;
+          box-shadow: 0 4px 4px 0 rgba(#000, 0.25);
+          transition: 300ms background-color ease-in-out,
+            300ms color ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+#price-switch {
+  display: none;
+  &:checked {
+    & + .header {
+      label {
+        &::before {
+          left: 105px;
+        }
+
+        span {
+          &:first-child {
+            opacity: 0.7;
+          }
+
+          &:last-child {
+            opacity: 1;
+          }
+        }
+      }
+      & + .packages {
+        .package {
+          .price-info {
+            .price span::before {
+              content: attr(data-yearly-price);
+            }
+            .description span::before {
+              content: attr(data-yearly-text);
+            }
+          }
+        }
+      }
+    }
+  }
+}

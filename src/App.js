@@ -8,6 +8,7 @@ import {
   Post,
 } from './components/day_2'
 import { Search2, Topics, List } from './components/day_3'
+import { Pricing } from './components/day_4'
 import Layout from './components/layout'
 
 const menuArray = [
@@ -67,6 +68,15 @@ const menuArray = [
       {
         name: 'List',
         component: <List />,
+      },
+    ],
+  },
+  {
+    name: 'Day 4',
+    items: [
+      {
+        name: 'Pricing Plan',
+        component: <Pricing />,
       },
     ],
   },
